@@ -10,55 +10,13 @@
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <style> 
       html, body, #container {
-        height: 100%
+        height: 100%;
+        width: 100%;
       }
 
       body {
         background-image: url("http://i.giphy.com/l0HlyLQsbvhciAuKA.gif");
         font-family: 'Press Start 2P', cursive;
-      }
-
-      #container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .content > div {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-
-      .big-text {
-        font-size: 72px;
-        color: red;
-        text-shadow: -10px 0px 0px blue;
-      }
-
-      .banner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-      }
-
-      .banner div {
-        margin: 25px 0;
-      }
-
-      ul,li {
-        text-decoration: none;
-        list-style: none;
       }
 
       a {
@@ -72,13 +30,31 @@
       }
 
       .toolbar {
-        top: 0;
         display: flex;
         justify-content: space-between;
         text-align: center;
         flex-wrap: nowrap;
         flex-direction: row;
         width: 100%;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .content > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .big-text {
+        font-size: 72px;
+        color: red;
+        text-shadow: -10px 0px 0px blue;
       }
 
       .footer {
@@ -99,19 +75,18 @@
 </head>
 
 <body>
-  <div class="toolbar">
-    <div>
-      <a target="_blank" href="http://www.electionprofitmakers.com/">Election Profit Makers</a>
-    </div>
-    <div>
-      <a target="_blank" href="https://twitter.com/david_rees">David Reese</a>
-    </div>
-    <div>
-      <a target="_blank" href="https://twitter.com/jonkimball">Jon Kimball</a>
-    </div>
-  </div>
-
   <div id="container">
+    <div class="toolbar">
+      <div>
+        <a target="_blank" href="http://www.electionprofitmakers.com/">Election Profit Makers</a>
+      </div>
+      <div>
+        <a target="_blank" href="https://twitter.com/david_rees">David Reese</a>
+      </div>
+      <div>
+        <a target="_blank" href="https://twitter.com/jonkimball">Jon Kimball</a>
+      </div>
+    </div>
     <div class="content">
       <div class="big-text">Simply</div>
       <div class="big-text">Wonderful</div>
@@ -121,13 +96,13 @@
       <div class="big-text">Thank You</div>
       <div class="big-text">Kid Midas</div>
     </div>
-  </div>
-
-  <div class="footer">
-    <div>
-      <a target="_blank" href="http://www.electionprofitmakers.com/donate/">Powered By The People</a>
+    <div class="footer">
+      <div>
+        <a target="_blank" href="http://www.electionprofitmakers.com/donate/">Powered By The People</a>
+      </div>
     </div>
   </div>
+
 
 </body>
 </html> 
