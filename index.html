@@ -9,6 +9,10 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <style> 
+      html, body, #container {
+        height: 100%
+      }
+
       body {
         background-image: url("http://i.giphy.com/l0HlyLQsbvhciAuKA.gif");
         font-family: 'Press Start 2P', cursive;
@@ -16,9 +20,27 @@
 
       #container {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+      }
+
+      .content {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+      }
+
+      .content > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .big-text {
+        font-size: 72px;
+        color: red;
+        text-shadow: -10px 0px 0px blue;
       }
 
       .banner {
@@ -27,9 +49,6 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 72px;
-        color: red;
-        text-shadow: -10px 0px 0px blue;
         flex-wrap: wrap;
       }
 
@@ -80,27 +99,30 @@
 </head>
 
 <body>
-  <div id="container">
-    <div class="toolbar">
-      <div>
-        <a target="_blank" href="http://www.electionprofitmakers.com/">Election Profit Makers</a>
-      </div>
-      <div>
-        <a target="_blank" href="https://twitter.com/david_rees">David Reese</a>
-      </div>
-      <div>
-        <a target="_blank" href="https://twitter.com/jonkimball">Jon Kimball</a>
-      </div>
+  <div class="toolbar">
+    <div>
+      <a target="_blank" href="http://www.electionprofitmakers.com/">Election Profit Makers</a>
     </div>
-    <div class="banner">
-      <div class>Simply Wonderful</div>
-      <div class>Thank You</div>
-      <div class>Kid Midas</div>
+    <div>
+      <a target="_blank" href="https://twitter.com/david_rees">David Reese</a>
     </div>
-    <div class="frame">
-      <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/291446030&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    <div>
+      <a target="_blank" href="https://twitter.com/jonkimball">Jon Kimball</a>
     </div>
   </div>
+
+  <div id="container">
+    <div class="content">
+      <div class="big-text">Simply</div>
+      <div class="big-text">Wonderful</div>
+      <div class="frame">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/291446030&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      </div>
+      <div class="big-text">Thank You</div>
+      <div class="big-text">Kid Midas</div>
+    </div>
+  </div>
+
   <div class="footer">
     <div>
       <a target="_blank" href="http://www.electionprofitmakers.com/donate/">Powered By The People</a>
