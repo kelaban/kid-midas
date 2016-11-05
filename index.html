@@ -14,6 +14,13 @@
         font-family: 'Press Start 2P', cursive;
       }
 
+      #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
       .banner {
         display: flex;
         align-items: center;
@@ -40,10 +47,13 @@
         text-decoration: none;
       }
 
+      a:hover {
+        font-style: italic;
+      }
+
       .toolbar {
         top: 0;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         text-align: center;
         flex-wrap: nowrap;
@@ -51,12 +61,15 @@
         width: 100%;
       }
 
-      .toolbar li {
+      .footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
       }
 
-      .footer {
-        margin-top: 25px;
-        text-align: right;
+      .frame {
+        width: 550px;
       }
 
 
@@ -82,13 +95,13 @@
       <div class="we-thank-you">We Thank You</div>
       <div class="kid-midas">Kid Midas</div>
     </div>
-
-    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/291446030&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-    <div class="footer">
-      <div>
-        <a target="_blank" href="http://www.electionprofitmakers.com/donate/">Powered By The People</a>
-      </div>
+    <div class="frame">
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/291446030&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      <a target="_blank" href="http://www.electionprofitmakers.com/donate/">Powered By The People</a>
     </div>
   </div>
 
